@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "POST",
-			url: "php/mail.php",
+			url: "../php/mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
@@ -24,6 +24,13 @@ $(document).ready(function() {
    	});
 	$(".popup-close").on("click", function() {
      $('#popup').animate({'opacity':'0'}, 600, function () {   
+			$(this).css({'visibility': 'hidden'}) });  });
+
+	$(".button-popup2").on("click", function() {
+     $('#popup-table').animate({'opacity':'1'}, 600).delay(200).css({'visibility': 'visible'})
+   	});
+	$(".popup-close").on("click", function() {
+     $('#popup-table').animate({'opacity':'0'}, 600, function () {   
 			$(this).css({'visibility': 'hidden'}) });  });
 
 });

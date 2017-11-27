@@ -97,9 +97,10 @@ header .header-wrap .phone {
 }
 .content-post section .video iframe {
   margin: 88px 0 0 20px;
-  width: 428px;
-  height: 282px;
-  border: 5px solid #0113ff;
+  width: 560px;
+  height: 315px;
+  border: 8px solid #0113ff;
+  border-radius: 6px;
 }
 .content-post .hide {
   position: fixed;
@@ -126,7 +127,7 @@ header .header-wrap .phone {
   font-size: 1.1em;
   font-weight: 100;
   letter-spacing: 1.5px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 .content-post .post form p {
   color: white;
@@ -223,6 +224,10 @@ header .header-wrap .phone {
   transition: .5s;
 }
 #popup {
+  visibility: hidden;
+  opacity: 0;
+}
+#popup-table {
   visibility: hidden;
   opacity: 0;
 }
@@ -381,7 +386,7 @@ footer p {
   top: 50%;
   left: calc(50% - 150px);
   text-align: center;
-  background-color: #a7ce3a;
+  background-color: #0113ff;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
